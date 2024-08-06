@@ -147,8 +147,6 @@ contract SyndicateFund is ERC721, ERC721Burnable {
             delete userNFTs[msg.sender];
         }
 
-        supply -= numberOfNFTs;
-
         token.transfer(msg.sender, totalReturnAmount);
     }
 
